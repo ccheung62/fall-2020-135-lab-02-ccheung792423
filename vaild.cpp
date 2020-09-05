@@ -21,13 +21,13 @@ After a valid value is obtained, print this number n squared.
 
 int main () {
   int num;
-  std::cout << "Please enter an integer: ";
+  std::cout << "Please enter an integer: ";  //takes an user input
   std::cin >> num;
-  while (num <=0 || num>=100) {
+  while (num <=0 || num>=100) {  //checks if it is out of bound
     std::cout << "Please re-enter: ";
     std::cin >> num;
   }
-  std::cout << "\nNumber squared is " << num*num << "\n";
+  std::cout << "\nNumber squared is " << num*num << "\n"; //print the squared value
   return 0;
   
 }
