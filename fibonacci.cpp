@@ -30,5 +30,5 @@ int main () {
   return 0;
 }
 
-/* it goes into the negative on the 47th and differs from the fibonacci numbers
+/* It goes into the negative on the 47th and differs from the fibonacci numbers. After it turns two billion the next number in the sequence becomes negative. Once the sequence surpass that limit that an int type could hold, it becomes the most negative number possible in that int type, resulting in a negative number. 
  */
