@@ -16,30 +16,26 @@ Write a program that creates an array of 10 integers, and provides the user with
 #include <iostream>
 
 int main () {
-  int myData[10];  
-  std::cout << "\n";
-  for (int i=0; i<10; i++) { 
+  int ind = 1;
+  int val = 1;
+  int myData[10];  //declare array
+  for (int i=0; i<10; i++) { //sets the all the array values into 1
     myData[i] = 1;
-    std::cout << myData[i] << " ";
   }
-  int ind;
-  int val;
-  std::cout << "\n\nInput index: ";  
-  std::cin >> ind;
-  std::cout << "Input value: ";
-  std::cin >> val;
   std::cout << "\n";
-  while (ind>=0 && ind<10){ 
-    myData[ind] = val;
+  do {
+    myData[ind] = val; //set inputted value into inputted index
     for (int i=0; i<10; i++){
-      std::cout << myData[i] << " ";
+      std::cout << myData[i] << " ";  //prints the array
     }
-    std::cout << "\n\nInput index: ";
+    std::cout << "\n\nInput index: ";  //ask for index input
     std::cin >> ind;
-    std::cout << "Input value: ";
+    std::cout << "Input value: ";  //ask for value input
     std::cin >> val;
     std::cout << "\n";
   }
+  while (ind>=0 && ind<10); //checks if the inputted index is in range
   std::cout << "Index out of range. Exit.\n";
   return 0;
 }
+
