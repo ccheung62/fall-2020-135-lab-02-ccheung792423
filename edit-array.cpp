@@ -3,6 +3,25 @@ Author: Cheuk Lam Cheung
 Course: CSCI-135
 Instructor: Mike Zamansky
 Assignment: Using arrays to store, update, and retrieve numbers, Lab2C
+Sample Input/Output:
+$ ./edit-array
+
+1 1 1 1 1 1 1 1 1 1
+
+Input index: 8
+Input value: 99
+
+1 1 1 1 1 1 1 1 99 1
+
+Input index: 0
+Input value: 300
+
+300 1 1 1 1 1 1 1 99 1
+
+Input index: 10
+Input value: 5
+
+Index out of range. Exit.
 
 Write a program that creates an array of 10 integers, and provides the user with an interface to edit any of its elements. Specifically, it should work as follows:
 
