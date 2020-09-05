@@ -16,5 +16,9 @@ Write a program that asks the user to input two integers L and U (representing t
 
 int main () {
   print_interval(-5, 10);
+  print_interval(3, 12);
+  print_interval(6, 8);
+  print_interval(-12, -6);
+  print_interval(-15, -13);
   return 0;
 }
